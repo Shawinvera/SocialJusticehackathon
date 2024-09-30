@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident <Details></Details></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FILE A COMPLAINT</h1>
+    <form action="/report" method="POST">
+        <label for="description">Incident Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br>
+        
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br>
+        
+        <label for="media">Upload any media (optional):</label><br>
+    <input type="file" id="media" name="media" multiple><br><br>
+
+        <button type="submit">Submit Report</button>
+    </form>
+    <p><a href="/logout">Logout</a></p>
+
+        <script src="app.js"></script>
+</body>
+</html>
